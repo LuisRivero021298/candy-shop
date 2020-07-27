@@ -1,0 +1,38 @@
+@media (max-width: 900px){
+  .products{
+    height: 110px;
+  }
+}
+@media (max-width: 750px){
+  .main-section{
+    padding: 4%;
+  }
+  .products{
+    padding: 40px 15%;
+    display: inherit;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .product{
+    margin: 0 auto;
+    margin-top: auto;
+    max-width: 400px;
+  }
+  .events, .mentions-cards{
+    display: inherit;
+  }
+  .event {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .event .content .image-content{
+    width: 80%;
+  }
+  .mention{
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
