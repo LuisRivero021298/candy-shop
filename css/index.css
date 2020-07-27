@@ -8,6 +8,7 @@ html, body{
   --primary-bg: #8338EC;
   --black-color: #111;
   --grey-dark-color: #333;
+  --grey-light-color: #666;
   --white-color: #FFF;
   --white-color-hover: #DDD;
   --action-color: #dd006E;
@@ -87,7 +88,7 @@ h1{
   padding: 25px;
   color: var(--black-color);
   margin-top: -32%;
-  max-width: 300px;
+  max-width: 320px;
   min-width: 285px;
   box-sizing: border-box;
 }
@@ -145,15 +146,16 @@ h1{
 
 .events {
   height: 50px;
-  padding:25% 15%;
+  padding:20% 13%;
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .event{
   padding: 35px;
-  max-width: 240px;
+  max-width: 250px;
   min-width: 200px;
   box-sizing: border-box;
 }
@@ -175,4 +177,53 @@ h1{
   font-size: var(--paragraph-size-sm);
   color: var(--white-color-hover);
   font-weight: var(--paragraph-weigth);
+}
+
+/*MENTIONS SECTION*/
+.mentions{
+  padding: 5% 0;
+}
+.mentions h2{
+  margin-top: 0;
+  font-size: var(--subtitle-lg);
+  text-align: center;
+  letter-spacing: 2px;
+}
+.mentions-cards{
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mention{
+  max-width: 230px;
+  padding: 5px;
+}
+.mention .content{
+  padding-bottom: 10px;
+  background-color: var(--white-color);
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(1,1,1,.3);
+}
+.mention .content figure{
+  width: 100%;
+  margin: 0;
+}
+.mention .content figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.mention .content h3{
+  width: 90%;
+  margin: 5px auto;
+  font-size: var(--subtitle-sm);
+  color: var(--grey-dark-color);
+}
+.mention .content p{
+  width: 90%;
+  margin: 5px auto;
+  font-size: var(--paragraph-size-sm);
+  color: var(--grey-light-color);
 }
