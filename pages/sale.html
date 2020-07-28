@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/mobile.css">
-  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <link rel="stylesheet" href="../css/animations.css">
   <title>Candy shop</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
   <header>
     <nav class="fadeInDown">
       <div class="brand-logo">
-        CandyShop
+        <a href="../index.html">CandyShop</a>
       </div>
       <div class="nav-options">
         <ul>
@@ -24,7 +25,37 @@
       </div>
     </nav>
   </header>
-  
+
+  <div class="container main">
+    <div class="row">
+      <section class="col-4">
+        <div class="payment_module">
+          <figure class="">
+            <img src="../images/candy.svg" alt="candy">
+          </figure>
+          <h2>Producto - 1</h2>
+          <p>Miles de productos hay en el mercado pero nada como una caja de dulces.</p>
+        </div>
+      </section>
+      <section class="col-5">
+        <div class="payment_module container">
+          <form action="">
+            <label for="name">Nombre</label>
+            <input class="data" type="text" id="name" placeholder="Nombre">
+
+            <label for="email">Email</label>
+            <input class="data" type="text" id="email" placeholder="Email">
+
+            <label for="phone">Teléfono</label>
+            <input class="data" type="text" id="phone" placeholder="Telefono">
+
+            <button class="btn btn-action" type="submit">Confimar pago</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+  </div>
   <footer>
     <a href="#">Terminos y condiciones</a>
     <a href="#">contacto@gmail.com</a>
